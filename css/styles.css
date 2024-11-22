@@ -1,3 +1,47 @@
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -8,6 +52,82 @@ body {
 h1 {
   text-align: center;
   color: #333;
+}
+
+/*MIS CAMBIOS*/
+
+h1{
+  color:aliceblue;
+  font-size: 20px;
+  background-color: rgb(23, 40, 41);
+  text-align: center;
+}
+
+#listaUsuarios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  gap:15px;
+  margin-top: 40px;
+  width: calc(100% - 30px);
+}
+
+.item{
+  display: flex;
+   padding-bottom: 20px;
+}
+
+.divCard{
+  border: 2px solid #87cde9;
+  width: 400px;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius:20px;
+
+  
+}
+.divInfo{
+  border: 0.5px solid #acaeaf;
+  width: 280px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.divInfo-img{
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+  height: 90px;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.divInfo-img img{
+width: 80px;
+height: 80px;
+}
+.divInfo,.divComp-addres p{
+  font-size: 14px;
+}
+
+.divComp-addres{
+  padding: 0px 10px 10px 10px;
+}
+
+@media (max-width: 390px) {
+  .divInfo{
+    width: 250px;
+    height: 90px;
+   
+  }
+  
+.divCard{
+  width: 350px;
+}
+.divComp-addres{
+  padding: 10px 10px 10px 10px;
+}
 }
 
 
